@@ -7,4 +7,4 @@ inspired by Bro Code
 
 ## Interface
 
-![Interface](\assets\interface.png)
+![Interface](/assets/interface.png)
