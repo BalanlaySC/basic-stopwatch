@@ -4,7 +4,20 @@
   border: 3px solid;
   border-radius: 12px;
   background-color: #333333;
-  color: white;
+  color: aqua;
   cursor: pointer;
   font-family: consolas, monospace;
+}
+
+#timeDisplay {
+  font-size: 75px;
+  color: aqua;
+  font-family: consolas, monospace;
+}
+
+#timeContainer {
+  text-align: center;
+  border: 3px solid;
+  border-radius: 25px;
+  background-color: #222222;
 }
