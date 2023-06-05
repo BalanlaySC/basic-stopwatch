@@ -21,8 +21,25 @@ startBtn.addEventListener("click", () => {
     intervalId = setInterval(updateTime, 1);
   }
 });
-pauseBtn.addEventListener("click", () => {});
-resetBtn.addEventListener("click", () => {});
+pauseBtn.addEventListener("click", () => {
+  if (!paused) {
+    paused = true;
+    elapsedTime = Date.now() - startTime;
+    clearInterval(intervalId);
+  }
+});
+resetBtn.addEventListener("click", () => {
+  paused = true;
+  clearInterval(intervalId);
+  hrs = 0;
+  mins = 0;
+  secs = 0;
+  millis = 0;
+  startTime = 0;
+  elapsedTime = 0;
+  current = 0;
+  timeDisplay.textContent = "00:00:00.000";
+});
 
 function updateTime() {
   elapsedTime = Date.now() - startTime;
